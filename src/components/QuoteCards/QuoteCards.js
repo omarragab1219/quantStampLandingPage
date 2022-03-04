@@ -48,28 +48,58 @@ const QuoteCards = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [recentlyDeactivatedIndex, setRecentlyDeactivatedIndex] =
     useState(null);
-  const [peviousClicked, setPreviousClicked] = useState(false);
+  const [peviousSlide, setPreviousSlide] = useState(false);
 
   useEffect(() => {
     console.log("active idex", activeIndex);
+    console.log("recentlyDeactivatedIndex", recentlyDeactivatedIndex);
   }, [activeIndex, recentlyDeactivatedIndex]);
 
   const nextSlide = () => {
+    setPreviousSlide(false);
     if (activeIndex + 1 !== data.length) {
+      setRecentlyDeactivatedIndex(activeIndex);
       setActiveIndex(activeIndex + 1);
-      setRecentlyDeactivatedIndex(activeIndex - 1);
     } else if (activeIndex + 1 === data.length) {
       setActiveIndex(0);
       setRecentlyDeactivatedIndex(data.length - 1);
     }
   };
   const previousSlide = () => {
+    setPreviousSlide(true);
     if (activeIndex !== 0) {
+      setRecentlyDeactivatedIndex(activeIndex);
       setActiveIndex(activeIndex - 1);
-      setRecentlyDeactivatedIndex(activeIndex - 1);
     } else if (activeIndex === 0) {
       setActiveIndex(data.length - 1);
-      setRecentlyDeactivatedIndex(1);
+      setRecentlyDeactivatedIndex(0);
+    }
+  };
+
+  const dotClickLeftOrRight = (x) => {
+    if (activeIndex < x && activeIndex !== x) {
+      console.log("x", x);
+      if (peviousSlide === true) {
+        setPreviousSlide(false);
+      }
+
+      if (x + 1 !== data.length) {
+        setRecentlyDeactivatedIndex(activeIndex);
+        setActiveIndex(x);
+      } else if (x + 1 === data.length) {
+        setActiveIndex(x);
+        setRecentlyDeactivatedIndex(activeIndex);
+      }
+      /* -------------------------------------------------------------------------- */
+    } else if (activeIndex >= x && activeIndex !== x) {
+      setPreviousSlide(true);
+      if (x !== 0) {
+        setRecentlyDeactivatedIndex(activeIndex);
+        setActiveIndex(x);
+      } else if (x === 0) {
+        setRecentlyDeactivatedIndex(activeIndex);
+        setActiveIndex(x);
+      }
     }
   };
   const renderQuotes = () => {
@@ -80,10 +110,18 @@ const QuoteCards = () => {
           key={i}
           className={`${
             i === activeIndex
-              ? ` ${styles.quoteContainer} ${styles.quoteActive}`
-              : i - 1 === recentlyDeactivatedIndex ||
-                data.length - 1 === recentlyDeactivatedIndex
-              ? ` ${styles.quoteContainer} ${styles.quoteRecentlyDeactivatedLeft}`
+              ? ` ${styles.quoteContainer} ${
+                  peviousSlide
+                    ? styles.quoteActiveRight
+                    : styles.quoteActiveLeft
+                }`
+              : i === recentlyDeactivatedIndex
+              ? // data.length - 1 === recentlyDeactivatedIndex
+                ` ${styles.quoteContainer} ${
+                  peviousSlide
+                    ? styles.quoteRecentlyDeactivatedRight
+                    : styles.quoteRecentlyDeactivatedLeft
+                }`
               : ` ${styles.quoteContainer} ${styles.quoteDeactivated}`
           }`}
         >
@@ -112,27 +150,27 @@ const QuoteCards = () => {
           />
           <div
             className={activeIndex === 0 ? styles.activeDot : styles.dot}
-            onClick={() => setActiveIndex(0)}
+            onClick={() => dotClickLeftOrRight(0)}
           ></div>
           <div
             className={activeIndex === 1 ? styles.activeDot : styles.dot}
-            onClick={() => setActiveIndex(1)}
+            onClick={() => dotClickLeftOrRight(1)}
           ></div>
           <div
             className={activeIndex === 2 ? styles.activeDot : styles.dot}
-            onClick={() => setActiveIndex(2)}
+            onClick={() => dotClickLeftOrRight(2)}
           ></div>
           <div
             className={activeIndex === 3 ? styles.activeDot : styles.dot}
-            onClick={() => setActiveIndex(3)}
+            onClick={() => dotClickLeftOrRight(3)}
           ></div>
           <div
             className={activeIndex === 4 ? styles.activeDot : styles.dot}
-            onClick={() => setActiveIndex(4)}
+            onClick={() => dotClickLeftOrRight(4)}
           ></div>
           <div
             className={activeIndex === 5 ? styles.activeDot : styles.dot}
-            onClick={() => setActiveIndex(5)}
+            onClick={() => dotClickLeftOrRight(5)}
           ></div>
           <img
             src={rightArrow}
