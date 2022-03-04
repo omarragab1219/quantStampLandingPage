@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(5, 40, 146);
+  font-size: 30px;
+  font-weight: 400;
+}
+.companyList {
+  margin-bottom: 40px;
+  height: 54px;
+  display: grid;
+  gap: 0px 30px;
+  grid-template-columns: 141.422px 106.078px 106.062px 141.438px 141.422px 70.7188px 141.422px 141.438px;
+  width: 1200px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.companyList div:first-child {
+  padding-left: 11px;
+}
+.companyList div:last-child {
+  padding-right: 11px;
+}
+.companyContainer {
+  display: flex;
+  align-items: center;
+}
+.company {
+  width: 100%;
+}

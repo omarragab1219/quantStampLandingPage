@@ -1,0 +1,177 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.container h2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(5, 40, 146);
+  font-size: 30px;
+}
+
+.backgroundAndContentContainer {
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+  height: 676.98px;
+}
+
+.darkContainer {
+  height: 676.98px;
+  background-color: rgb(225, 229, 241);
+  width: 1120px;
+  position: absolute;
+}
+
+.contentContainer {
+  z-index: +1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(85, 209, 13); */
+  width: 1200px;
+}
+
+.leftDoc {
+  height: 516.984px;
+  padding: 40px;
+  width: 510px;
+  background-color: rgb(255, 255, 255);
+}
+
+.leftDoc h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.leftDoc p {
+  margin-bottom: 20px;
+  line-height: 29px;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(5, 40, 146);
+  font-size: 17px;
+  padding: 0px 0px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(90deg, #8bffbf, #4cbcfd);
+  background-color: white;
+  border: 2px solid rgb(5, 40, 146);
+  transition: background-image 3s;
+  display: flex;
+  align-items: center;
+}
+.a {
+  color: rgb(5, 40, 146);
+  list-style: none;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 16px 20px;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease-in-out;
+}
+.a:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.btnHover {
+  animation: changeBackground 0.3s ease-in-out;
+}
+
+.mostPop {
+  margin-bottom: 20px;
+}
+
+.optionContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowViewCardContainer {
+  position: relative;
+  cursor: pointer;
+  width: 163px;
+  height: 78px;
+}
+.darkContainerOnHover {
+  position: relative;
+  width: 163px;
+  height: 78px;
+}
+
+.dark {
+  /* height: 99px; */
+  /* position: absolute; */
+
+  /* background-color: rgba(0, 0, 0, 0.964); */
+}
+
+.cardArrowContainer {
+  position: relative;
+}
+.card {
+  opacity: 1;
+  position: relative;
+  top: 0;
+  width: 163px;
+  height: 78px;
+  transition: 0.2s ease-in-out;
+}
+
+.darken {
+  filter: brightness(0.6);
+}
+
+.viewArrowContainer {
+  display: flex;
+  align-items: center;
+  /* height: 14px; */
+
+  position: absolute;
+  bottom: 0px;
+  right: 12px;
+  /* position: relative; */
+
+  color: white;
+  /* background-color: rgb(0, 0, 0); */
+}
+.viewArrowContainer p {
+  margin: 0;
+  padding-right: 10px;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+  /* position: absolute; */
+  /* background-color: rgb(255, 0, 234); */
+}
+.view {
+  margin: 0;
+  padding-right: 10px;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  /* position: absolute; */
+  /* background-color: rgb(255, 0, 234); */
+}
+
+.viewMoveOver {
+  transform: translateX(calc(-107.453px + 91px));
+}
+.viewArrowContainer p:hover {
+  transform: translateX(calc(-107.453px + 91px));
+}
+.viewArrow {
+}
+
+/* -------------------------------------------------------------------------- */
+.rightDoc {
+  height: 556.984px;
+  padding: 20px;
+  width: 550px;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+}

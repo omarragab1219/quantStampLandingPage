@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  height: 70px;
+}
+
+.quantLogo {
+  height: 29.422px;
+  width: 155;
+  margin-right: 60px;
+
+  /* filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); */
+}
+
+.ul1,
+.ul2 {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.ul1 {
+  margin-left: 38px;
+  /* background-color: aqua; */
+}
+
+.optionListContainer {
+  display: flex;
+}
+.optionListContainer li {
+  padding: 0px 20px;
+}
+
+.ul2 {
+  margin-right: 38px;
+  width: 372.938px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: aqua; */
+}
+
+.request {
+  /* background-color: red; */
+  white-space: nowrap;
+  margin-left: 20px;
+  border-bottom: 2px solid rgb(76, 187, 253);
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+}
+
+.flag {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}

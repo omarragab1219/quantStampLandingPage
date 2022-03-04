@@ -1,0 +1,64 @@
+.container {
+  height: 414px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.backgroundAndTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.darkContainer {
+  height: 328px;
+  background-color: rgb(225, 229, 241);
+  width: 1120px;
+  position: absolute;
+}
+.textContainer {
+  /* height: calc(342px - 64px); */
+  height: 328px;
+  display: flex;
+  align-items: center;
+  z-index: +1;
+  /* background-color: aqua; */
+}
+.text {
+  width: 1120px;
+  background-color: rgb(255, 255, 255);
+  height: 168px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleBlue {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(5, 40, 146);
+  font-size: 30px;
+}
+
+.img {
+  /* height: 120px; */
+  width: 140px;
+  margin-right: 40px;
+}
+
+.text p {
+  /* display: flex; */
+  /* align-items: center; */
+  width: 940px;
+  height: 168px;
+  line-height: 28px;
+  font-size: 18px;
+}
+.text p span {
+  color: rgb(5, 40, 146);
+}

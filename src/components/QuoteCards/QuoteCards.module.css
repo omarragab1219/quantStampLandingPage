@@ -1,0 +1,149 @@
+.container {
+  height: 342px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.darkContainer {
+  height: 278px;
+  background-color: rgb(225, 229, 241);
+  width: 1120px;
+  position: absolute;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 342px;
+}
+
+.quoteListContainer {
+  height: calc(342px - 64px);
+  display: flex;
+  align-items: center;
+  z-index: +1;
+}
+
+.quoteList {
+  width: 1120px;
+  background-color: rgb(255, 255, 255);
+  height: 118px;
+  padding: 40px;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1120px;
+  height: 118px;
+  font-weight: 400;
+  line-height: 26px;
+  /* display: none; */
+  transition: 2s ease-in-out;
+  background-color: pink;
+}
+.quoteActive {
+  animation: slidein 2s ease-in-out forwards;
+}
+
+.quoteDeactivated {
+  display: none;
+}
+
+.quoteRecentlyDeactivatedLeft {
+  position: absolute;
+  animation: slideoutLeft 2s ease-in-out forwards;
+}
+.quoteRecentlyDeactivatedRight {
+  position: absolute;
+  animation: slideoutRight 0.4s ease-in-out forwards;
+}
+
+.quote {
+  margin-bottom: 20px;
+}
+
+.personWorkContainer {
+  display: flex;
+}
+.person {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.work {
+}
+
+.btn {
+  height: 64px;
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  cursor: pointer;
+  margin: 3px;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #d6ddea;
+  margin: 0px 3px;
+}
+.dot:hover {
+  background-color: rgba(5, 40, 146, 0.4);
+}
+.activeDot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0px 3px;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 0px 2px #052892;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(150%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideoutLeft {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-150%);
+    /* display: none; */
+    /* background-color: #052892; */
+  }
+}
+@keyframes slideoutRight {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(150%);
+    /* display: none; */
+    /* background-color: #052892; */
+  }
+}
