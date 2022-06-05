@@ -8,6 +8,9 @@ import SuperRare from "./components/SuperRare/SuperRare";
 import ExpertSecurityAudit from "./components/ExpertSecurityAudit/ExpertSecurityAudit";
 import BigCompanyList from "./components/BigCompanyList/BigCompanyList";
 import News from "./components/News/News";
+import Monitoring from "./components/Monitoring/Monitoring";
+import Subscribe from "./components/Subscribe/Subscribe";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -23,13 +26,22 @@ function App() {
           <CompanyListOne />
           <QuoteCards />
           <SuperRare />
+
           <ExpertSecurityAudit />
           <BigCompanyList />
+
           <News />
+          <Monitoring />
+          <Subscribe />
         </div>
+      </div>
+      <div className={styles.full}>
+        <Footer />
       </div>
     </div>
   );
 }
 
 export default App;
+
+// /* <News />

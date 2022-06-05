@@ -1,18 +1,41 @@
-.container {
+.container0 {
   position: relative;
-  height: 316px;
+  min-height: 316px;
+  /* background-color: #052892; */
   margin-bottom: 40px;
-}
-
-.itemList {
-  padding: 40px 0px;
-  background-color: rgb(255, 255, 255);
-
+  width: 100%;
   display: flex;
+  justify-content: center;
+  position: relative;
+  /* padding-right: 40px;
+  padding-left: 40px; */
+}
+.container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  position: absolute;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  /* padding: 0px 40px; */
+  position: relative;
   top: -40px;
+  /* padding-right: 40px;
+  padding-left: 40px; */
+  margin: 0px 40px;
+}
+.itemList {
+  width: 100%;
+  max-width: 1200px;
+  /* padding: 40px 0px; */
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(197, 31, 31); */
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .item {
@@ -22,7 +45,8 @@
   align-items: center;
   text-align: center;
   height: 236px;
-  width: 300px;
+  /* width: 25vw; */
+  /* max-width: 300px; */
 }
 .image {
   height: 120px;
@@ -35,6 +59,18 @@
   color: #052892;
 }
 .description {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+  .itemList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .itemList {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

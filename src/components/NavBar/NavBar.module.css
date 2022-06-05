@@ -1,14 +1,32 @@
+.container0 {
+  width: 100%;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+}
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 16px;
   height: 70px;
+  /* background-color: aqua; */
+  width: 100%;
+  max-width: 1465px;
+  padding: 0px 20px;
 }
-
+.quantLogoContainer {
+  margin-top: 5px;
+  height: 30px;
+  max-width: 155px;
+  width: 100%;
+  /* background-color: red; */
+  padding: 20px;
+}
 .quantLogo {
   height: 29.422px;
-  width: 155;
+  max-width: 155;
+  width: 100%;
   margin-right: 60px;
 
   /* filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); */
@@ -25,19 +43,24 @@
 }
 
 .ul1 {
-  margin-left: 38px;
+  /* margin-left: 38px; */
   /* background-color: aqua; */
 }
 
 .optionListContainer {
   display: flex;
+  list-style: none;
 }
 .optionListContainer li {
   padding: 0px 20px;
 }
 
+.optionListContainer li:last-child {
+  margin-right: 10px;
+}
+
 .ul2 {
-  margin-right: 38px;
+  /* margin-right: 38px; */
   width: 372.938px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,10 +80,33 @@
 .flags {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.flags li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flag {
+  padding: 0px 3px;
   height: 24px;
   width: 24px;
   margin-left: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+.NavBarMobile {
+  z-index: 100;
+  display: none;
+}
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 962px) {
+  .NavBarMobile {
+    display: block;
+  }
+  .container {
+    display: none;
+  }
 }

@@ -1,5 +1,5 @@
 .container {
-  height: 414px;
+  /* min-height: 414px; */
   margin-bottom: 80px;
   display: flex;
   justify-content: center;
@@ -7,31 +7,135 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  /* padding: 0px 40px; */
+  position: relative;
+  /* background-color: rgb(226, 16, 215); */
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  /* display: grid;
+  grid-template-rows: 1fr; */
+  height: fit-content;
+}
+/* 
+.test {
+  max-width: 1200px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.test div {
+  max-width: 1120px;
+  width: 100%;
+  height: 100px;
+  margin: 0px 40px;
+  background-color: rgb(0, 85, 255);
+}
+.test span {
+  max-width: 1200px;
+  width: 100%;
+  height: 50px;
+  margin: 0px 40px;
+  background-color: rgb(255, 0, 255);
+  position: absolute;
+} */
+
+/* -------------------------------------------------------------------------- */
+.testText {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+.test {
+  /* background-color: aqua; */
+  min-height: 248px;
+  padding: 40px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.test1 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  /* height: 300px; */
+  z-index: +1;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.test1 p {
+  max-width: 940px;
+  min-height: 168px;
+  line-height: 28px;
+  font-size: 18px;
+}
+.test1 p span {
+  color: rgb(5, 40, 146);
+}
+
+.test2 {
+  background-color: rgb(225, 229, 241);
+  width: calc(100% - 80px);
+  height: 100%;
+
+  position: absolute;
+}
+/* -------------------------------------------------------------------------- */
+.backgroundAndTextContainer0 {
+  opacity: 0.8;
+  position: relative;
 }
 
 .backgroundAndTextContainer {
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.darkContainer0 {
+  width: 100%;
+  display: block;
+  min-height: 328px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(30, 255, 0); */
+  height: 100%;
 }
 .darkContainer {
-  height: 328px;
-  background-color: rgb(225, 229, 241);
-  width: 1120px;
-  position: absolute;
+  margin: 0px 40px;
+  min-height: 328px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 85, 255);
+  display: block;
+  /* height: 328px; */
 }
 .textContainer {
-  /* height: calc(342px - 64px); */
-  height: 328px;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   z-index: +1;
-  /* background-color: aqua; */
+  background-color: rgb(255, 0, 0);
 }
 .text {
-  width: 1120px;
+  max-width: 1200px;
   background-color: rgb(255, 255, 255);
-  height: 168px;
+  min-height: 168px;
   padding: 40px;
   display: flex;
   align-items: center;
@@ -39,26 +143,77 @@
 }
 
 .titleBlue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
   margin-top: 20px;
   margin-bottom: 40px;
   color: rgb(5, 40, 146);
   font-size: 30px;
+  /* height: 100%; */
+  /* height: 46px; */
 }
 
 .img {
   /* height: 120px; */
   width: 140px;
+  height: 140px;
+  object-fit: contain;
   margin-right: 40px;
 }
 
 .text p {
-  /* display: flex; */
-  /* align-items: center; */
-  width: 940px;
-  height: 168px;
+  max-width: 940px;
+  min-height: 168px;
   line-height: 28px;
   font-size: 18px;
 }
 .text p span {
   color: rgb(5, 40, 146);
+}
+
+@media only screen and (max-width: 767px) {
+  .test1 {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .img {
+    margin: 0;
+
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 120%;
+  }
+  .test1 {
+    padding: 10px;
+    width: 80%;
+  }
+  .test1 p {
+    font-size: 16px;
+    font-weight: bold;
+    /* text-align: center; */
+  }
+
+  .img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .test2 {
+    width: calc(100% - 40px);
+    height: calc(100% - 140px);
+
+    position: absolute;
+  }
 }

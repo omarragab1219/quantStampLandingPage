@@ -135,50 +135,52 @@ const QuoteCards = () => {
     });
   };
   return (
-    <div className={styles.container}>
-      <div className={styles.darkContainer}></div>
-      <div className={styles.contentContainer}>
-        <div className={styles.quoteListContainer}>
-          <div className={styles.quoteList}>{renderQuotes()}</div>
+    <div className={styles.container0}>
+      <div className={styles.container}>
+        <div className={styles.darkContainer}></div>
+        <div className={styles.contentContainer}>
+          <div className={styles.quoteListContainer}>
+            <div className={styles.quoteList}>{renderQuotes()}</div>
+          </div>
         </div>
-        <div className={styles.btn}>
-          <img
-            src={leftArrow}
-            alt=""
-            className={styles.arrow}
-            onClick={() => previousSlide()}
-          />
-          <div
-            className={activeIndex === 0 ? styles.activeDot : styles.dot}
-            onClick={() => dotClickLeftOrRight(0)}
-          ></div>
-          <div
-            className={activeIndex === 1 ? styles.activeDot : styles.dot}
-            onClick={() => dotClickLeftOrRight(1)}
-          ></div>
-          <div
-            className={activeIndex === 2 ? styles.activeDot : styles.dot}
-            onClick={() => dotClickLeftOrRight(2)}
-          ></div>
-          <div
-            className={activeIndex === 3 ? styles.activeDot : styles.dot}
-            onClick={() => dotClickLeftOrRight(3)}
-          ></div>
-          <div
-            className={activeIndex === 4 ? styles.activeDot : styles.dot}
-            onClick={() => dotClickLeftOrRight(4)}
-          ></div>
-          <div
-            className={activeIndex === 5 ? styles.activeDot : styles.dot}
-            onClick={() => dotClickLeftOrRight(5)}
-          ></div>
-          <img
-            src={rightArrow}
-            alt=""
-            className={styles.arrow}
-            onClick={() => nextSlide()}
-          />
-        </div>
+      </div>
+      <div className={styles.btn}>
+        <img
+          src={leftArrow}
+          alt=""
+          className={styles.arrow}
+          onClick={() => previousSlide()}
+        />
+        <div
+          className={activeIndex === 0 ? styles.activeDot : styles.dot}
+          onClick={() => dotClickLeftOrRight(0)}
+        ></div>
+        <div
+          className={activeIndex === 1 ? styles.activeDot : styles.dot}
+          onClick={() => dotClickLeftOrRight(1)}
+        ></div>
+        <div
+          className={activeIndex === 2 ? styles.activeDot : styles.dot}
+          onClick={() => dotClickLeftOrRight(2)}
+        ></div>
+        <div
+          className={activeIndex === 3 ? styles.activeDot : styles.dot}
+          onClick={() => dotClickLeftOrRight(3)}
+        ></div>
+        <div
+          className={activeIndex === 4 ? styles.activeDot : styles.dot}
+          onClick={() => dotClickLeftOrRight(4)}
+        ></div>
+        <div
+          className={activeIndex === 5 ? styles.activeDot : styles.dot}
+          onClick={() => dotClickLeftOrRight(5)}
+        ></div>
+        <img
+          src={rightArrow}
+          alt=""
+          className={styles.arrow}
+          onClick={() => nextSlide()}
+        />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
-.container {
-  height: 342px;
+.container0 {
+  margin: 50px 0px;
+  min-height: 342px;
   display: flex;
   justify-content: center;
   display: flex;
@@ -7,12 +8,29 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 80px;
+  position: relative;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.container {
+  /* background-color: #05920c; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px 0px;
 }
 
 .darkContainer {
-  height: 278px;
+  /* height: 278px; */
   background-color: rgb(225, 229, 241);
-  width: 1120px;
+  /* background-color: rgb(12, 63, 218); */
+  width: calc(100% - 80px);
+  height: 100%;
   position: absolute;
 }
 
@@ -20,37 +38,53 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 342px;
+  overflow: hidden;
+  /* min-height: 342px; */
+
+  /* display: none; */
 }
 
 .quoteListContainer {
-  height: calc(342px - 64px);
+  /* min-height: calc(342px - 64px); */
+  max-height: 100%;
   display: flex;
   align-items: center;
   z-index: +1;
+  position: relative;
 }
 
 .quoteList {
-  width: 1120px;
+  max-width: 1120px;
+  width: 100%;
   background-color: rgb(255, 255, 255);
-  height: 118px;
+  /* background-color: rgb(191, 8, 228); */
+  min-height: 118px;
+
+  /* height: 118px; */
+  /* height: 100%; */
   padding: 40px;
   display: flex;
-  position: relative;
-  overflow: hidden;
+
+  /* overflow: hidden; */
 }
 
 .quoteContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 1120px;
+  max-width: 1120px;
+  min-width: 250px;
+  min-height: 118px;
   height: 118px;
+  /* height: 100%; */
+  width: 100%;
   font-weight: 400;
   line-height: 26px;
-  /* display: none; */
-  /* transition: 2s ease-in-out; */
-  /* background-color: pink; */
+  overflow: hidden;
+
+  /* background-color: aqua; */
+  /* opacity: 0.5; */
+  /* color: white; */
 }
 .quoteActiveLeft {
   animation: slideinLeft 0.3s ease-in-out forwards;
@@ -64,11 +98,35 @@
 }
 
 .quoteRecentlyDeactivatedLeft {
+  color: black;
+  opacity: 1;
+  /* background-color: #e5e911; */
   position: absolute;
+  padding: 40px 0px;
+  /* height: calc(100% - 80px);
+  width: calc(100% - 80px); */
+  /* height: 100%; */
+  /* height: inherit; */
+  /* width: inherit; */
+  width: calc(100% - 80px);
+  top: 0;
+  height: calc(100% - 80px);
   animation: slideoutLeft 0.3s ease-in-out forwards;
 }
 .quoteRecentlyDeactivatedRight {
+  color: black;
+  opacity: 1;
+  /* background-color: #e5e911; */
   position: absolute;
+  padding: 40px 0px;
+  /* height: calc(100% - 80px);
+  width: calc(100% - 80px); */
+  /* height: 100%; */
+  /* height: inherit; */
+  /* width: inherit; */
+  width: calc(100% - 80px);
+  top: 0;
+  height: calc(100% - 80px);
   animation: slideoutRight 0.3s ease-in-out forwards;
 }
 
@@ -144,9 +202,7 @@
   }
 
   to {
-    transform: translateX(-110%);
-    /* opacity: 0; */
-    /* background-color: #052892; */
+    transform: translateX(-150%);
   }
 }
 @keyframes slideoutRight {
@@ -155,10 +211,100 @@
   }
 
   to {
-    transform: translateX(110%);
-    /* display: none;
-    opacity: 0; */
-    /* display: none; */
-    /* background-color: #052892; */
+    transform: translateX(150%);
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .quoteContainer {
+    max-width: 1120px;
+    min-width: 250px;
+    min-height: 118px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .quoteList {
+    max-width: 1120px;
+    width: 100%;
+
+    /* background-color: rgb(191, 8, 228); */
+    min-height: 118px;
+
+    display: flex;
+
+    overflow: hidden;
+  }
+
+  .quoteContainer {
+    max-width: 1120px;
+    min-width: 250px;
+    min-height: 118px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .darkContainer {
+    /* height: 278px; */
+    background-color: rgb(225, 229, 241);
+    /* background-color: rgb(12, 63, 218); */
+    width: calc(100%);
+    height: calc(100% - 140px);
+    padding: 0px 20px;
+
+    position: absolute;
+  }
+  .quoteRecentlyDeactivatedLeft {
+    padding: 20px 0px;
+
+    width: calc(100% - 40px);
+
+    height: calc(100% - 40px);
+  }
+  .quoteRecentlyDeactivatedRight {
+    padding: 20px 0px;
+
+    width: calc(100% - 40px);
+
+    height: calc(100% - 40px);
+  }
+
+  .quoteList {
+    padding: 20px;
+
+    overflow: hidden;
+  }
+  .quoteContainer {
+    height: 340px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .container0 {
+    transform: scaleY(1);
+    transform: scaleX(1);
+  }
+
+  .quoteContainer {
+    max-width: 1120px;
+    min-width: 0px;
+    min-height: 118px;
+    height: 440px;
+  }
+  .quoteList {
+    max-width: 1120px;
+    width: 100%;
+
+    /* background-color: rgb(191, 8, 228); */
+    min-height: 118px;
+
+    /* height: 118px; */
+    /* height: 100%; */
+
+    display: flex;
+
+    /* overflow: hidden; */
   }
 }

@@ -48,8 +48,10 @@ const NumberList = () => {
     });
   };
   return (
-    <div className={styles.container}>
-      <div className={styles.itemList}>{renderItem()}</div>
+    <div className={styles.container0}>
+      <div className={styles.container}>
+        <div className={styles.itemList}>{renderItem()}</div>
+      </div>
     </div>
   );
 };

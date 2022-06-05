@@ -1,13 +1,5 @@
 import styles from "./BigCompanyList.module.css";
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useContext,
-  FC,
-  SetStateAction,
-  Dispatch,
-} from "react";
+import React from "react";
 import dubai from "../../images/dubai.svg";
 import outliers from "../../images/outliers.png";
 import plug from "../../images/plug.png";
@@ -35,7 +27,7 @@ import nearSVG from "../../images/companyList/near.png";
 import cardanoSVG from "../../images/companyList/cardano.svg";
 /* -------------------------------------------------------------------------- */
 import makerSVG from "../../images/companyList/maker.svg";
-import curveSVG from "../../images/companyList/curve.svg";
+import curveSVG from "../../images/companyList/curve.webp";
 import compoundSVG from "../../images/companyList/compound.svg";
 import chainlinkSVG from "../../images/companyList/chainlink.svg";
 import idleSVG from "../../images/companyList/idle.svg";
@@ -46,7 +38,7 @@ import beepleSVG from "../../images/companyList/beeple.png";
 import zormSVG from "../../images/companyList/zorm.png";
 import decentralandSVG from "../../images/companyList/decentraland.svg";
 /* -------------------------------------------------------------------------- */
-import anchSVG from "../../images/companyList/anch.png";
+import anchSVG from "../../images/companyList/anch.webp";
 import cryptoSVG from "../../images/companyList/crypto.svg";
 import etoroSVG from "../../images/companyList/etoro.svg";
 import buycoinsSVG from "../../images/companyList/buycoins.svg";
@@ -97,7 +89,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={worldEconomicSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={toyotaPSVG} alt="" />
         </div>
@@ -113,7 +105,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={gmoSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={flowSVG} alt="" />
         </div>
@@ -129,7 +121,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={cardanoSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={makerSVG} alt="" />
         </div>
@@ -145,7 +137,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={idleSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={axieSVG} alt="" />
         </div>
@@ -161,7 +153,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={decentralandSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={anchSVG} alt="" />
         </div>
@@ -177,7 +169,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={bitgoSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={klaySVG} alt="" />
         </div>
@@ -193,7 +185,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={confluxSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={dapperVG} alt="" />
         </div>
@@ -209,7 +201,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={arcaSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={graphSVG} alt="" />
         </div>
@@ -225,7 +217,7 @@ const BigCompanyList = () => {
         <div className={styles.leftBorder}>
           <img src={barnSVG} alt="" />
         </div>
-        {/* -------------------------------------------------------------------------- */}
+
         <div>
           <img src={openseaSVG} alt="" />
         </div>

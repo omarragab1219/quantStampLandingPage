@@ -1,19 +1,11 @@
 import styles from "./CompanyListOne.module.css";
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useContext,
-  FC,
-  SetStateAction,
-  Dispatch,
-} from "react";
+import React from "react";
 import eth2 from "../../images/eth2.png";
 import beeple from "../../images/beeple.png";
-import curve from "../../images/curve.svg";
+import curve from "../../images/curve.webp";
 import maker from "../../images/maker.svg";
 import solana from "../../images/solana.svg";
-import topShot from "../../images/topShot.svg";
+import topShot from "../../images/topShot.webp";
 import compound from "../../images/compound.svg";
 import openSea from "../../images/opensea.svg";
 
@@ -49,7 +41,13 @@ const CompanyListOne = () => {
     return data.map((item, i) => {
       return (
         <div key={i} className={styles.companyContainer}>
-          <img src={item.image} alt="" className={styles.company} />
+          <img
+            src={item.image}
+            alt=""
+            className={styles.company}
+            width="200"
+            height="100"
+          />
         </div>
       );
     });

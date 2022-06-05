@@ -1,19 +1,11 @@
 import styles from "./ExpertSecurityAudit.module.css";
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useContext,
-  FC,
-  SetStateAction,
-  Dispatch,
-} from "react";
+import React, { useState } from "react";
 import documentLock from "../../images/documentLock.svg";
 import makerCard from "../../images/makerCard.svg";
 import idleCard from "../../images/idleCard.svg";
 import eth2Card from "../../images/eth2Card.svg";
 import viewArrow from "../../images/viewArrow.svg";
-import reportDoc from "../../images/reportDoc.svg";
+import reportDoc from "../../images/reportDoc.png";
 
 const ExpertSecurityAudit = () => {
   const [moveView, setMoveView] = useState(null);
@@ -24,9 +16,8 @@ const ExpertSecurityAudit = () => {
       <div className={styles.backgroundAndContentContainer}>
         <div className={styles.darkContainer}></div>
         <div className={styles.contentContainer}>
-          {/* -------------------------------------------------------------------------- */}
           <div className={styles.leftDoc}>
-            <h4>Expert security audits for blockchains</h4>
+            <h3>Expert security audits for blockchains</h3>
             <p>
               Quantstamp conducts smart contract, off-chain, networking, and
               front-end audits in order to enhance the security of your
@@ -39,7 +30,12 @@ const ExpertSecurityAudit = () => {
               Learn more about our process by clicking on the button below.
             </p>
             <button className={styles.btn}>
-              <a href="" className={styles.a}>
+              <a
+                href="https://www.linkedin.com/in/omar-ragab/"
+                target="_blank"
+                rel="noopener"
+                className={styles.a}
+              >
                 View Our Process
               </a>
             </button>
@@ -60,6 +56,8 @@ const ExpertSecurityAudit = () => {
                       ? `${styles.card} ${styles.darken}`
                       : styles.card
                   }`}
+                  // width="160"
+                  // height="12"
                 />
                 <div
                   className={styles.viewArrowContainer}
@@ -82,6 +80,8 @@ const ExpertSecurityAudit = () => {
                         ? `${styles.viewArrow} ${styles.darken}`
                         : styles.viewArrow
                     }`}
+                    // width="6"
+                    // height="12"
                   />
                 </div>
               </div>
@@ -98,6 +98,8 @@ const ExpertSecurityAudit = () => {
                       ? `${styles.card} ${styles.darken}`
                       : styles.card
                   }`}
+                  // width="6"
+                  // height="12"
                 />
                 <div
                   className={styles.viewArrowContainer}
@@ -120,6 +122,8 @@ const ExpertSecurityAudit = () => {
                         ? `${styles.viewArrow} ${styles.darken}`
                         : styles.viewArrow
                     }`}
+                    // width="6"
+                    // height="12"
                   />
                 </div>
               </div>
@@ -137,6 +141,8 @@ const ExpertSecurityAudit = () => {
                       ? `${styles.card} ${styles.darken}`
                       : styles.card
                   }`}
+                  // width="6"
+                  // height="12"
                 />
                 <div
                   className={styles.viewArrowContainer}
@@ -159,12 +165,14 @@ const ExpertSecurityAudit = () => {
                         ? `${styles.viewArrow} ${styles.darken}`
                         : styles.viewArrow
                     }`}
+                    // width="6"
+                    // height="12"
                   />
                 </div>
               </div>
             </div>
           </div>
-          {/* -------------------------------------------------------------------------- */}
+
           <div className={styles.rightDoc}>
             <img src={reportDoc} alt="" />
           </div>
