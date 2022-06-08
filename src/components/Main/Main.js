@@ -7,7 +7,7 @@ const Main = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.textContainer}>
-          <p className={styles.smartContract}> SMART CONTRACT SECURITY</p>
+          <p className={styles.smartContract}>SMART CONTRACT SECURITY</p>
           <h1 className={styles.title}>Leaders in Blockchain Security</h1>
           <h2 className={styles.description}>
             Quantstamp's mission is to secure the decentralized internet, and
