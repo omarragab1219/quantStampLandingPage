@@ -2,10 +2,16 @@ import styles from "./Footer.module.css";
 import React from "react";
 import quantLogoSVG from "../../images/QuantLogo.svg";
 import socialMediaSVG from "../../images/socialMedia.svg";
+import backgroundImage from "../../images/background5.jpeg";
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
       <div className={styles.logoTitleContainer}>
         <img src={quantLogoSVG} alt="" />
         <h3>Leaders in Blockchain Security and Solutions</h3>
