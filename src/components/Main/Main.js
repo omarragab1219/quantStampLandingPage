@@ -1,10 +1,16 @@
 import styles from "./Main.module.css";
 import React from "react";
 import sheildLogo from "../../images/shield.svg";
+import backgroundImage from "../../images/background5.jpeg";
 
 const Main = () => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
       <div className={styles.content}>
         <div className={styles.textContainer}>
           <p className={styles.smartContract}>SMART CONTRACT SECURITY</p>

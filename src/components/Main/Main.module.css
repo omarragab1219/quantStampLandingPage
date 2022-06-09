@@ -10,19 +10,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: red; */
   /* padding: 0px 40px; */
 }
 
 .content {
+  padding: 0px 40px;
+
   /* height: calc(100vh - 70px); */
   /* padding: 0px 40px; */
-  max-width: 1200px;
+  /* max-width: 1200px;
   width: 100%;
   background-color: blue;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
+  width: 100%;
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: red; */
 }
 
 .textContainer {
@@ -36,7 +51,8 @@
   justify-content: space-between;
   margin-bottom: 55px;
   /* margin-right: 140px; */
-  background-color: purple;
+  /* background-color: purple; */
+  color: white;
 }
 .smartContract {
   font-size: 12px;
@@ -101,25 +117,17 @@
 
 .imgContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-
-  background-color: #58fd4c;
+  /* background-color: #58fd4c; */
+  width: 100%;
+  margin-top: 20px;
 }
 
 .sheildLogo {
-  /* width: 480px; */
-  /* height: auto; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* display: flex;
-  justify-content: center;
-  width: 100%; */
-  /* height: 340px; */
-  /* margin-bottom: 55px; */
-
-  background-color: #4cbcfd;
+  width: 85%;
+  height: auto;
+  /* background-color: #4cbcfd; */
 }
 
 /* -------------------------------------------------------------------------- */
@@ -145,6 +153,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
     /* align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -162,13 +172,9 @@
     /* min-width: none;
     width: 100%;
     justify-content: flex-start; */
-  }
+    justify-content: center;
 
-  .imgContainer {
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
-    background-color: rgba(0, 72, 255, 0.424);
+    width: 100%;
   }
 
   .sheildLogo {
@@ -178,7 +184,7 @@
     margin-left: auto;
     margin-right: auto; */
 
-    width: 100%;
+    width: 60%;
     /* height: 340px; */
   }
 
@@ -208,7 +214,7 @@
   .imgContainer {
     min-width: none;
 
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 
     /* transform: scale(1) translateY(-20px); */
   }
@@ -229,11 +235,21 @@
   .title {
     font-size: 32px;
   }
+  .title {
+    font-size: 26px;
+    margin: 14px 0px;
+  }
+  .smartContract {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 28px;
+  }
 }
 @media only screen and (max-width: 390px) {
-  .title {
-    font-size: 34px;
-  }
 }
 
 /* -------------------------------------------------------------------------- */
