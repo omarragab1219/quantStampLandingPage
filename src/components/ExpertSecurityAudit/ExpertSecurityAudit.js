@@ -11,7 +11,7 @@ const ExpertSecurityAudit = () => {
   const [moveView, setMoveView] = useState(null);
   return (
     <div className={styles.container}>
-      <img src={documentLock} alt="" />
+      <img src={documentLock} alt="" width="80" height="80" />
       <h2>Expert Security Audits</h2>
       <div className={styles.backgroundAndContentContainer}>
         <div className={styles.darkContainer}></div>
@@ -80,8 +80,8 @@ const ExpertSecurityAudit = () => {
                         ? `${styles.viewArrow} ${styles.darken}`
                         : styles.viewArrow
                     }`}
-                    // width="6"
-                    // height="12"
+                    width="6"
+                    height="12"
                   />
                 </div>
               </div>
@@ -98,8 +98,8 @@ const ExpertSecurityAudit = () => {
                       ? `${styles.card} ${styles.darken}`
                       : styles.card
                   }`}
-                  // width="6"
-                  // height="12"
+                  width="6"
+                  height="12"
                 />
                 <div
                   className={styles.viewArrowContainer}
@@ -122,8 +122,8 @@ const ExpertSecurityAudit = () => {
                         ? `${styles.viewArrow} ${styles.darken}`
                         : styles.viewArrow
                     }`}
-                    // width="6"
-                    // height="12"
+                    width="6"
+                    height="12"
                   />
                 </div>
               </div>
@@ -141,8 +141,8 @@ const ExpertSecurityAudit = () => {
                       ? `${styles.card} ${styles.darken}`
                       : styles.card
                   }`}
-                  // width="6"
-                  // height="12"
+                  width="6"
+                  height="12"
                 />
                 <div
                   className={styles.viewArrowContainer}
@@ -165,8 +165,8 @@ const ExpertSecurityAudit = () => {
                         ? `${styles.viewArrow} ${styles.darken}`
                         : styles.viewArrow
                     }`}
-                    // width="6"
-                    // height="12"
+                    width="6"
+                    height="12"
                   />
                 </div>
               </div>
