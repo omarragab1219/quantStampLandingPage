@@ -126,6 +126,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener"
                 className={styles.discord}
+                style={{
+                  backgroundImage: `url(${`  https://assets.website-files.com/5bb269510fd6bf857fcd50c7/5d1156aa96e64007fd8b99a1_v5-footer-icons.svg`})`,
+                }}
               >
                 Github
               </a>
@@ -136,6 +139,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener"
                 className={styles.youtube}
+                style={{
+                  backgroundImage: `url(${`  https://assets.website-files.com/5bb269510fd6bf857fcd50c7/5d1156aa96e64007fd8b99a1_v5-footer-icons.svg`})`,
+                }}
               >
                 YouTube
               </a>
@@ -146,6 +152,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener"
                 className={styles.github}
+                style={{
+                  backgroundImage: `url(${`  https://assets.website-files.com/5bb269510fd6bf857fcd50c7/5d1156aa96e64007fd8b99a1_v5-footer-icons.svg`})`,
+                }}
               >
                 GitHub
               </a>
@@ -156,6 +165,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener"
                 className={styles.facebook}
+                style={{
+                  backgroundImage: `url(${`  https://assets.website-files.com/5bb269510fd6bf857fcd50c7/5d1156aa96e64007fd8b99a1_v5-footer-icons.svg`})`,
+                }}
               >
                 FaceBook
               </a>
@@ -166,6 +178,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener"
                 className={styles.linkedin}
+                style={{
+                  backgroundImage: `url(${`  https://assets.website-files.com/5bb269510fd6bf857fcd50c7/5d1156aa96e64007fd8b99a1_v5-footer-icons.svg`})`,
+                }}
               >
                 Linkedin
               </a>
@@ -176,6 +191,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener"
                 className={styles.twitter}
+                style={{
+                  backgroundImage: `url(${`  https://assets.website-files.com/5bb269510fd6bf857fcd50c7/5d1156aa96e64007fd8b99a1_v5-footer-icons.svg`})`,
+                }}
               >
                 Twitter
               </a>

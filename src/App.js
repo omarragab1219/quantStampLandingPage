@@ -35,7 +35,10 @@ function App() {
           <Subscribe />
         </div>
       </div>
-      <div className={styles.full}>
+      <div
+        className={styles.full}
+        style={{ backgroundImage: `url(${`./images/background5.jpeg`}` }}
+      >
         <Footer />
       </div>
     </div>
