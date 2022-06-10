@@ -14,8 +14,9 @@
 .full {
   width: 100vw;
   /* background-image: url("./images/background5.jpeg"); */
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: rgb(49, 49, 49);
 }
 

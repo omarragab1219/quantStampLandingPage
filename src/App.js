@@ -11,11 +11,17 @@ import News from "./components/News/News";
 import Monitoring from "./components/Monitoring/Monitoring";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
+import backgroundImage from "./images/background5.jpeg";
 
 function App() {
   return (
     <div className={styles.container}>
-      <div className={styles.full}>
+      <div
+        className={styles.full}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
+      >
         <NavBar />
         <Main />
       </div>

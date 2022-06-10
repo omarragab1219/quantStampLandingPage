@@ -7,9 +7,9 @@ const Main = () => {
   return (
     <div
       className={styles.container}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-      }}
+      // style={{
+      //   backgroundImage: `url(${backgroundImage})`,
+      // }}
     >
       <div className={styles.content}>
         <div className={styles.textContainer}>
