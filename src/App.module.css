@@ -17,7 +17,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(49, 49, 49);
+  /* background-color: rgb(49, 49, 49); */
+  z-index: +1;
 }
 
 .contentContainer {

@@ -18,13 +18,27 @@ function App() {
     <div className={styles.container}>
       <div
         className={styles.full}
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-        }}
+        // style={{
+        //   backgroundImage: `url(${backgroundImage})`,
+        // }}
       >
         <NavBar />
         <Main />
       </div>
+      <img
+        src={backgroundImage}
+        style={{
+          position: "absolute",
+          top: "0",
+          zIndex: "0",
+          objectFit: "cover",
+          // opacity: "0.5",
+          zIndex: "0",
+          height: "100vh",
+          width: "100vw",
+        }}
+        alt=""
+      />
 
       <div className={styles.contentContainer}>
         <div className={styles.content}>
