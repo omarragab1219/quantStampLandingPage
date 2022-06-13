@@ -27,6 +27,7 @@ function App() {
       </div>
       <img
         src={backgroundImage}
+        preload="true"
         style={{
           display: "none",
           position: "absolute",
@@ -39,6 +40,8 @@ function App() {
           width: "100vw",
         }}
         alt=""
+        height="100vh"
+        width="100vw"
       />
 
       <div className={styles.contentContainer}>
