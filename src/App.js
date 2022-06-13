@@ -18,9 +18,9 @@ function App() {
     <div className={styles.container}>
       <div
         className={styles.full}
-        // style={{
-        //   backgroundImage: `url(${backgroundImage})`,
-        // }}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
       >
         <NavBar />
         <Main />
@@ -28,6 +28,7 @@ function App() {
       <img
         src={backgroundImage}
         style={{
+          display: "none",
           position: "absolute",
           top: "0",
           zIndex: "0",
